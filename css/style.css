@@ -1,0 +1,107 @@
+
+.player,.blog,.rate-clock{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+   
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 2px solid lightgrey;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.work{
+    margin: 20px;
+ }
+
+.player img{
+    height: 60px;
+    margin-right: 20px;
+    
+}
+
+.blog img{
+    width: 200px;
+    margin-right: 20px;
+}
+.work img{
+    width: 300px;
+    padding-left: 10px;
+    
+}
+
+.fa-clock{
+    padding: 6px;
+    border-radius: 10px;
+    background-color: rgb(219, 124, 124);
+}
+
+.rating{
+    padding-right: 30px;
+   
+}
+
+.work-details{
+    padding-left: 10px;
+}
+
+.card{
+   
+  
+ border: none;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.top-players,.Bloging-section{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.latest-works{
+    padding-top: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@media(max-width:992px){
+
+    .players{
+     grid-template-columns: repeat(2, 1fr);
+     }
+ 
+     .blogs {
+         grid-template-columns: repeat(1, 1fr);
+       }
+ 
+ }
+ 
+ @media(max-width:668px){
+ 
+     .players{
+         grid-template-columns: repeat(1, 1fr);
+         }
+         .blog{
+             grid-template-columns: repeat(1, 1fr);
+             display: block;
+             }
+ }
+
+ .card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
